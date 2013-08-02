@@ -1,0 +1,35 @@
+<!DOCTYPE HTML5>
+<html>
+<head>
+<style>
+* {
+  margin:  0;
+  padding: 0;
+  
+  line-height: 1.0em;
+  font-weight: 900;
+  font-size:   16px;
+
+  color:            #9C9EFC;
+  background-color: #3C3ADC;
+}
+</style>
+</head>
+
+<body id="body" style="margin: 0 auto; width: 650px;">
+</body>
+
+<script>
+  var console = document.getElementById('body');  
+  var lines   = ['\u2571', '\u2572']
+
+  console.textContent = '';
+
+  for(var j =0; j < 160; j++) {
+    for(var i = 0; i < 40; i++) {      
+      console.textContent += lines[Math.floor(Math.random() * 2)]; 
+    }
+    console.textContent += '\n';
+  }
+</script>
+</html>
